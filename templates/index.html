@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Rod tracker group E</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='vendor/axios/axios.min.js') }}"></script>
+    
+    <!--script src="{{ url_for('static', filename='css/custom_style.css') }}"></script--> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom_style.css') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <!--link rel="stylesheet" href="/home/manraj/Desktop/static/css/custom_style.css"-->
+  </head>
+  <body>
+     <div style="text-align: center;"><b style="color: white;">Rod Tracker Group E</b>
+    <marquee direction="left"><b style="color: white;">Rod Tracker Project by group members>>>Adewumi Temitope>>>Munagala Venkata>>> Singh  Manraj</b></marquee>
+    </div>
+    <section id="streaming_viewer">
+      <h1 align="center">Rod Tracker</h1>
+      <img id="background" class="center" src="{{ url_for('video_feed') }}">
+    </section>
+
+    <section id="actions">
+      <h2>Actions</h2>
+        <div>
+          <!-- Button to update the system's status -->
+          <button onclick="requestStartMotor();" class="start_motor" data-somestringvalue-text="motor started">Start Motor</button>
+          <button onclick="requestStopMotor()" class="stop_motor"> Stop Motor</button>
+          <button onclick="updateStatus()" class="update_status">Update Status</button>
+        </div>
+      </section>  
+
+  <section id="monitoring_info">
+    <h2 style="color:blue;">Monitoring information</h2>
+    <!-- HTML elements for 'Motor status' information -->
+    <!-- ... -->
+    <p><b>Motor Status: Is the motor running?</b><span style="color: blue"></span><span id= "motor_status"></span>
+    <br/>
+    <b>Sensor Distance in cm: </b><span style="color: blue"></span><span id= "distance_status"></span>
+    <br/></p>
+
+    <!-- HTML elements for 'Current color' information -->
+    <!-- ... -->
+    <p><b>Current color from Open CV:</b>
+      <b>Green:</b><span style="color: green;"> </span><span id="green_open_cv"></span>, 
+      <b>Purple: </b> <span style="color: purple;"> </span><span id="purple_open_cv"></span>, 
+      <b>Yellow: </b><span style="color: yellow;"> </span><span id="yellow_open_cv"></span>
+    </p>
+
+    <!-- HTML elements for 'Distance' information -->
+    <!-- ... -->
+    <p><b>Current color from Distance:</b>
+      <b>Green:</b> <span style="color: green;"> </span><span id="green_from_distance"></span>,
+      <b>Purple: </b><span style="color: purple;"> </span><span id="purple_from_distance"></span>,
+      <b>Yellow: </b><span style="color: yellow;"> </span><span id="yellow_from_distance"></span> 
+    </p>
+
+  </section>
+  </body>
+</html>
