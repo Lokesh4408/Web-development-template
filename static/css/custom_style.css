@@ -1,0 +1,48 @@
+section{
+    background-color: lightslategray;
+}
+
+ #streaming_viewer{
+     width: 80%;
+     height: 400px;
+     background-color: black;
+ }
+
+ #action_button{
+     border-radius: 100px;
+     background-color: green;
+     padding: 10px;
+ }
+
+ .stop_motor{  
+     background-color: red;
+     border-radius: 100px;
+     height:50px;
+     width:105py;
+     padding: 10px;
+ }
+
+ .update_status{
+     background-color: yellow;
+     border-radius: 100px;
+     height:50px;
+     width:105px;
+     padding: 10px;
+ }
+
+.start_motor{
+    background-color: green;
+    border-radius: 100px;
+    height:50px;
+    width:105px;
+    padding: 10px; 
+}
+
+body{
+    background:url('https://media.giphy.com/media/OK5LK5zLFfdm/giphy.gif');
+    background-size: cover;
+  }
+  /* https://media.giphy.com/media/4H5jdBI1AEvS2xlra6/giphy.gif
+  https://media.giphy.com/media/OK5LK5zLFfdm/giphy.gif
+  https://media.giphy.com/media/l3vRnoppYtfEbemBO/giphy.gif
+  https://media3.giphy.com/media/sSCmoJMXIxTgiUgRRV/giphy.gif?cid=ecf05e476cus6k7rjig66yu4g28wr8d9vr8hkplbe7qf9dl6&rid=giphy.gif&ct=g */
